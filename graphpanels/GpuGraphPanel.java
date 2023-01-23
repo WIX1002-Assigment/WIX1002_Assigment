@@ -68,15 +68,15 @@ public class GpuGraphPanel extends JPanel{
 		g2D.drawLine(leftBorder+5, yAxislength+upBorder-labelspace*mult*4, leftBorder+xAxislength, yAxislength+upBorder-labelspace*mult*4);
 
 		//DRAW BAR CHART------------------------------
-		g2D.setColor(Color.red);
+		g2D.setColor(new Color(68, 78, 134));
 		g2D.fillRect(space+leftBorder-40, yAxislength-gpu1*mult+upBorder, 80, gpu1*mult);
-		g2D.setColor(Color.yellow);
+		g2D.setColor(new Color(149, 81, 150));
 		g2D.fillRect(space*2+leftBorder-40, yAxislength-gpu2*mult+upBorder, 80, gpu2*mult);
-		g2D.setColor(Color.green);
+		g2D.setColor(new Color(221, 81, 130));
 		g2D.fillRect(space*3+leftBorder-40, yAxislength-gpu3*mult+upBorder, 80, gpu3*mult);
-		g2D.setColor(Color.blue);
+		g2D.setColor(new Color(255, 110, 84));
 		g2D.fillRect(space*4+leftBorder-40, yAxislength-gpu4*mult+upBorder, 80, gpu4*mult);
-		g2D.setColor(new Color(232, 85, 237));
+		g2D.setColor(new Color(255, 166, 0));
 		g2D.fillRect(space*5+leftBorder-40, yAxislength-gpu5*mult+upBorder, 80, gpu5*mult);
 
 		//labels on x axis-----------------------

@@ -70,20 +70,20 @@ public class errorGraphPanel extends JPanel{
 
 		//draw graph lines---------------------------------------
 		g2D.setStroke(new BasicStroke(3));
-		g2D.setColor(Color.GREEN);
+		g2D.setColor(new Color(228,152,156));
 		for(int i = 0; i<xAxisnum-1; i++) {
 			g2D.drawLine(space*(i+1)+leftBorder, yAxislength-yVar[i]*mult+upBorder,space*(i+2)+leftBorder ,yAxislength-yVar[(i+1)]*mult+upBorder);
 		}
 
 		//draw dots on graph -----------------------
-		g2D.setColor(Color.red);
+		g2D.setColor(new Color(181,131,142));
 		for(int i = 0; i<xAxisnum; i++) {
 			g2D.fillOval(space*(i+1)+leftBorder-5, yAxislength-yVar[i]*mult+upBorder-5, 10, 10);
 		}
 
 		//labels on x axis-----------------------
-		g2D.setColor(Color.black);
 		g2D.setFont(new Font("Times Roman",Font.BOLD,20));
+		g2D.setColor(Color.black);
 		for(int i = 0; i<xAxisnum; i++) {
 			g2D.drawString(xVarShort[i],space*(i+1)+leftBorder-10 ,yAxislength+upBorder+50);
 		}

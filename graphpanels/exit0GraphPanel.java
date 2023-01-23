@@ -70,13 +70,13 @@ public class exit0GraphPanel extends JPanel{
 
 		//draw graph lines---------------------------------------
 		g2D.setStroke(new BasicStroke(3));
-		g2D.setColor(Color.GREEN);
+		g2D.setColor(new Color(217,188,184));
 		for(int i = 0; i<xAxisnum-1; i++) {
 			g2D.drawLine(space*(i+1)+leftBorder, yAxislength-yVar[i]*mult/6+upBorder,space*(i+2)+leftBorder ,yAxislength-yVar[(i+1)]*mult/6+upBorder);
 		}
 
 		//draw dots on graph -----------------------
-		g2D.setColor(Color.red);
+		g2D.setColor(new Color(195,172,180));
 		for(int i = 0; i<xAxisnum; i++) {
 			g2D.fillOval(space*(i+1)+leftBorder-5, yAxislength-yVar[i]*mult/6+upBorder-5, 10, 10);
 		}

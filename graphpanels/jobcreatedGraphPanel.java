@@ -68,13 +68,13 @@ public class jobcreatedGraphPanel extends JPanel{
 
 		//draw graph lines---------------------------------------
 		g2D.setStroke(new BasicStroke(3));
-		g2D.setColor(Color.GREEN);
+		g2D.setColor(new Color(255,0,255));
 		for(int i = 0; i<xAxisnum-1; i++) {
 			g2D.drawLine(space*(i+1)+leftBorder, yAxislength-yVar[i]*mult/5+upBorder,space*(i+2)+leftBorder ,yAxislength-yVar[(i+1)]*mult/5+upBorder);
 		}
 
 		//draw dots on graph -----------------------
-		g2D.setColor(Color.red);
+		g2D.setColor(new Color(68, 78, 134));
 		for(int i = 0; i<xAxisnum; i++) {
 			g2D.fillOval(space*(i+1)+leftBorder-5, yAxislength-yVar[i]*mult/5+upBorder-5, 10, 10);
 		}

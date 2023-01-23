@@ -101,7 +101,7 @@ public class usecGraphPanel extends JPanel{
 		g2D.drawLine(leftBorder-labellength/2+xAxislength, yAxislength+upBorder-labelspace*mult*5, leftBorder-labellength/2+labellength+xAxislength, yAxislength+upBorder-labelspace*mult*5);
 
 		//draw lines for total ------------------------
-		g2D.setColor(Color.GREEN);
+		g2D.setColor(new Color(148,180,249));
 		g2D.setStroke(new BasicStroke(3));
 		// (200,8)& (100,90)
 		g2D.drawLine(space+leftBorder, yAxislength-jun*mult+upBorder,space*2+leftBorder ,yAxislength-jul*mult+upBorder);
@@ -117,7 +117,7 @@ public class usecGraphPanel extends JPanel{
 		g2D.drawLine(space*6+leftBorder ,yAxislength-nov*mult+upBorder,space*7+leftBorder ,yAxislength-dec*mult+upBorder);
 
 		//draw lines for average------------------------------------
-		g2D.setColor(Color.red);
+		g2D.setColor(new Color(247,172,196));
 		g2D.setStroke(new BasicStroke(3));
 		// (200,8)& (100,90)
 		g2D.drawLine(space+leftBorder, yAxislength-avejun*mult+upBorder,space*2+leftBorder ,yAxislength-avejul*mult+upBorder);
@@ -132,7 +132,7 @@ public class usecGraphPanel extends JPanel{
 		//(600,103)&(700,28)
 		g2D.drawLine(space*6+leftBorder ,yAxislength-avenov*mult+upBorder,space*7+leftBorder ,yAxislength-avedec*mult+upBorder);
 
-		g2D.setColor(Color.green);
+		g2D.setColor(new Color(148,180,249));
 		g2D.fillOval(space+leftBorder-5, yAxislength-jun*mult+upBorder-5, 12, 12);
 		g2D.fillOval(space*2+leftBorder-5 ,yAxislength-jul*mult+upBorder-5, 12, 12);
 		g2D.fillOval(space*3+leftBorder-5 ,yAxislength-aug*mult+upBorder-5, 12, 12);
@@ -141,7 +141,7 @@ public class usecGraphPanel extends JPanel{
 		g2D.fillOval(space*6+leftBorder-5 ,yAxislength-nov*mult+upBorder-5, 12, 12);
 		g2D.fillOval(space*7+leftBorder-5 ,yAxislength-dec*mult+upBorder-5, 12, 12);
 
-		g2D.setColor(Color.red);
+		g2D.setColor(new Color(247,172,196));
 		g2D.fillOval(space+leftBorder-5, yAxislength-avejun*mult+upBorder-5, 12, 12);
 		g2D.fillOval(space*2+leftBorder-5 ,yAxislength-avejul*mult+upBorder-5, 12, 12);
 		g2D.fillOval(space*3+leftBorder-5 ,yAxislength-aveaug*mult+upBorder-5, 12, 12);
@@ -164,9 +164,9 @@ public class usecGraphPanel extends JPanel{
 
 		//label meaning of lines
 		g2D.setStroke(new BasicStroke(3));
-		g2D.setColor(Color.green);
+		g2D.setColor(new Color(148,180,249));
 		g2D.drawLine(350, 100, 450, 100);
-		g2D.setColor(Color.red);
+		g2D.setColor(new Color(247,172,196));
 		g2D.drawLine(350, 140, 450, 140);
 		g2D.setColor(Color.black);
 		g2D.drawString("Total time (usec)", 180, 105);

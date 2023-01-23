@@ -73,13 +73,12 @@ public class partitionGraphPanel extends JPanel {
 		int chartlength = 150;
 		int pullinfront = 150;
 
-		g2D.setColor(Color.red);
+		g2D.setColor(new Color(195,172,180));
 		g2D.fillRect(space+leftBorder-pullinfront, yAxislength-EPYC*mult+upBorder, chartlength, EPYC*mult);
-		g2D.setColor(Color.yellow);
+		g2D.setColor(new Color(217,188,184));
 		g2D.fillRect(space*2+leftBorder-pullinfront, yAxislength-GPU*mult+upBorder, chartlength, GPU*mult);
-		g2D.setColor(Color.green);
+		g2D.setColor(new Color(232,225,217));
 		g2D.fillRect(space*3+leftBorder-pullinfront, yAxislength-Opteron*mult+upBorder, chartlength, Opteron*mult);
-		g2D.setColor(Color.blue);
 
 		//labels on x axis-----------------------
 		int stringMinus = 100;
