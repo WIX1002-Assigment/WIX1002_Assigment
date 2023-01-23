@@ -78,14 +78,14 @@ public class frame1 extends JFrame implements ActionListener{
 		int psx = 150;
 		int psy = 100;
 
-		int ButtonWidth = 290;
+		int ButtonWidth = 300;
 		int ButtonLength = 120;
 
 		int ButtonspaceY = 150;
-		int ButtonspaceX = 310;
+		int ButtonspaceX = 350;
 
-		int leftborder = 35;
-		int upborder = 50;
+		int leftborder = 100;
+		int upborder = 100;
 
 		BjobC.setBounds(leftborder, upborder, ButtonWidth, ButtonLength);
 		BTimeLimitMonth.setBounds(leftborder, upborder+ButtonspaceY, ButtonWidth, ButtonLength);
@@ -494,7 +494,7 @@ public class frame1 extends JFrame implements ActionListener{
 	}
 
 	private void setVisible1() {
-		this.setBackground( new Color(236, 245, 255));
+		this.setBackground( new Color(217, 246, 250));
 		label.setVisible(false);
 		Bcpu.setVisible(false);
 		Bgpu.setVisible(false);

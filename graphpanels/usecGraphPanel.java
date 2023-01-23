@@ -23,7 +23,7 @@ public class usecGraphPanel extends JPanel{
 		int sep = 696553/5000; // 544/4
 		int oct = 1027007/5000; // 374/4
 		int nov = 687644/5000; // 0/4
-		int dec = 378164/5000; // 317/4
+		int dec = 379164/5000; // 317/4
 		int avejun = 68; // 234/4
 		int avejul = 135; // 352/4
 		int aveaug = 63; //392/4
@@ -32,7 +32,7 @@ public class usecGraphPanel extends JPanel{
 		int avenov = 168; // 683/4
 		int avedec = 93; // 438/4
 
-		int [] datas1 = {1278803,802316,799516,696553,1027007,687644,378164};
+		int [] datas1 = {1278803,802316,799516,696553,1027007,687644,379164};
 		int [] datas2 = {527,554,525,505,550,567,537};
 
 		//set data in x axis

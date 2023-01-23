@@ -117,7 +117,6 @@ public class AverageExecutionTime {
                 } else if (executionTime >= 86400000) {
                     Duration4++;
                 }
-
                 i++;
             }
 
