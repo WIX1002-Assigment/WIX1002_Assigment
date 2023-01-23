@@ -76,7 +76,6 @@ public class AverageExecutionTime {
         //------------------------------------------------------------------------------
         try {
             Scanner read = new Scanner(new FileInputStream("Job started and completed"));
-            PrintWriter os = new PrintWriter(new FileOutputStream("Average Execution Time.txt"));
             DecimalFormat df = new DecimalFormat("#.##");
 
             String[] temp;
@@ -85,23 +84,29 @@ public class AverageExecutionTime {
             int count = 1;
             double sum = 0;
             while(read.hasNextLine()) {
-
                 String start_time = null;
                 String end_time = null;
 
                 if (count % 2 != 0) {
                     temp = read.nextLine().split(" ");
                     start_time = temp[0];
+                    System.out.println("Start time: " + start_time);
                     count++;
 
                     temp = read.nextLine().split(" ");
                     end_time = temp[0];
+                    System.out.println("End time: " + end_time);
+
                     count++;
                 }
-                i++;
 
                 double executionTime = calculateDifference(start_time, end_time);
+                System.out.printf("The execution time for job ID %d is %.2f milliseconds", jobid[i], executionTime);
+                System.out.println();
+
                 sum += executionTime;
+
+                convert(executionTime);
 
                 if(executionTime < 60000) {
                     Duration1++;
@@ -112,31 +117,22 @@ public class AverageExecutionTime {
                 } else if (executionTime >= 86400000) {
                     Duration4++;
                 }
+
+                i++;
             }
 
             double average = sum/(i+1);
-            System.out.println("----------------------------------------------------------------------------------------------");
+            System.out.println("---------------------------------------------------------------------------");
 
             System.out.printf("The average execution time is %.2f millisecond", average);
             System.out.println();
-            os.println("Average execution time of the jobs submitted to UMHPC : " + df.format(average) + " milliseconds");
 
             int[] averageTime = convert(average);
-
-            os.println(averageTime[0] + " days, " + averageTime[1] + " hours, " + averageTime[2] + " minutes, " + averageTime[3] + " seconds");
-            os.println();
-            System.out.println();
 
             System.out.println("The number of job with execution time less than 1 minute \t\t\t:" + Duration1);
             System.out.println("The number of job with execution time between 1 minute to 1 hour \t:" + Duration2);
             System.out.println("The number of job with execution time between 1 to 24 hours \t\t:" + Duration3);
             System.out.println("The number of job with execution time more than 24 hours \t\t\t:" + Duration4);
-            os.println("The number of job with execution time less than 1 minute \t\t\t:" + Duration1);
-            os.println("The number of job with execution time between 1 minute to 1 hour \t:" + Duration2);
-            os.println("The number of job with execution time between 1 to 24 hours \t\t:" + Duration3);
-            os.println("The number of job with execution time more than 24 hours \t\t\t:" + Duration4);
-
-            os.close();
 
         } catch (FileNotFoundException e) {
             System.out.println("File not found.");
@@ -173,7 +169,8 @@ public class AverageExecutionTime {
 
         // Print the difference in years, in days, in hours, in minutes, and in seconds
         System.out.print("The execution time of the jobs submitted to UMHPC : ");
-        System.out.println(difference_In_Days + " days, " + difference_In_Hours + " hours, " + difference_In_Minutes + " minutes, " + difference_In_Seconds + " seconds \n");
+        System.out.println(difference_In_Days + " days, " + difference_In_Hours + " hours, " + difference_In_Minutes + " minutes, " + difference_In_Seconds + " seconds");
+        System.out.println();
 
         int[] average = new int[4];
         average[0] = (int)difference_In_Days;
