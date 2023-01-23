@@ -161,7 +161,7 @@ public class frame1 extends JFrame implements ActionListener{
 		Bpartition.setOpaque(true);
 		Bpartition.setFont(new Font("Serif", Font.PLAIN, 20));
 
-		Busec.setText("<html><center><b>Average time taken to <br>submit the job</b></center></html>");
+		Busec.setText("<html><center><b>Average time taken to <br>submit job in usec</b></center></html>");
 		Busec.setBackground(red);
 		Busec.setOpaque(true);
 		Busec.setFont(new Font("Serif", Font.PLAIN, 20));
