@@ -72,7 +72,6 @@ public class AverageExecutionTime {
             e.printStackTrace();
         }
 
-
         //------------------------------------------------------------------------------
         try {
             Scanner read = new Scanner(new FileInputStream("Job started and completed"));
@@ -117,6 +116,7 @@ public class AverageExecutionTime {
                 } else if (executionTime >= 86400000) {
                     Duration4++;
                 }
+
                 i++;
             }
 
@@ -144,7 +144,6 @@ public class AverageExecutionTime {
         SimpleDateFormat sdf = new SimpleDateFormat("'['yyyy-MM-dd'T'HH:mm:ss.SSS']'");
 
         try {
-
             // parse method is used to parse the text from a string to produce the date
             Date d1 = sdf.parse(start);
             Date d2 = sdf.parse(end);

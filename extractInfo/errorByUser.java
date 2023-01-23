@@ -53,7 +53,8 @@ public class errorByUser {
             System.out.println("File Not Found!");
         }
     }
-    public static LinkedHashMap<String, Integer> sortDescending(LinkedHashMap<String, Integer> dict) {
+
+    public static LinkedHashMap<String, Integer> sortDescending(LinkedHashMap<String,Integer> dict){
 
         List<Map.Entry<String, Integer>> userlist = new LinkedList<>(dict.entrySet());
         userlist.sort((map1, map2) -> map2.getValue().compareTo(map1.getValue()));

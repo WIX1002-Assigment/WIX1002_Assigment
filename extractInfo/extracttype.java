@@ -53,12 +53,12 @@ public class extracttype {
     }
 
     public static void table(ArrayList<Integer> array, String[]array2, String label) {
-        System.out.println("+---------------+---------------+");
-        System.out.printf("| %-13s | %-13s|\n",label, "Number of Jobs");
-        System.out.println("+---------------+---------------+");
+        System.out.println("+---------------+----------------+");
+        System.out.printf("| %-13s | %-13s |\n",label, "Number of Jobs");
+        System.out.println("+---------------+----------------+");
         for (int i = 0; i < array.size(); i++) {
-            System.out.printf("|  %-13s|  %-13s|\n", array2[i], array.get(i));
+            System.out.printf("|  %-13s|  %-13s |\n", array2[i], array.get(i));
         }
-        System.out.println("+---------------+---------------+\n\n");
+        System.out.println("+---------------+----------------+\n\n");
     }
 }

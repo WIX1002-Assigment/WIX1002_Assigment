@@ -16,7 +16,6 @@ public class extractnum {
     public static void main(String[] args) throws FileNotFoundException {
         String [] months = {"2022-06","2022-07","2022-08","2022-09","2022-10","2022-11","2022-12"};
 
-
         for(int i=0; i<7; i++) {
             int num = extract("_slurm_rpc_submit_batch_job", months[i]);
             add(submit, i, num);
@@ -65,7 +64,6 @@ public class extractnum {
         }
         System.out.println("Number of Jobs Completed with Exit Status 0");
         table(exit);
-
     }
 
     public static void add(ArrayList<Integer> array, int i, int count) {
