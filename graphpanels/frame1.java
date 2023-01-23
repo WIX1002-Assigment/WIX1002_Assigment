@@ -494,7 +494,7 @@ public class frame1 extends JFrame implements ActionListener{
 	}
 
 	private void setVisible1() {
-		this.setBackground( new Color(217, 246, 250));
+		this.setBackground( new Color(227, 237, 252));
 		label.setVisible(false);
 		Bcpu.setVisible(false);
 		Bgpu.setVisible(false);
