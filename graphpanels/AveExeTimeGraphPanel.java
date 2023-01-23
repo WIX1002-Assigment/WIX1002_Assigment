@@ -69,7 +69,7 @@ public class AveExeTimeGraphPanel extends JPanel {
 		g2D.fillRect(space*2+leftBorder-pullinfront, yAxislength-datas[1]*mult+upBorder, chartlength, datas[1]*mult);
 		g2D.setColor(new Color(174,220,203));
 		g2D.fillRect(space*3+leftBorder-pullinfront, yAxislength-datas[2]*mult+upBorder, chartlength, datas[2]*mult);
-		g2D.setColor(new Color(242,248,215));
+		g2D.setColor(new Color(255, 250, 202));
 		g2D.fillRect(space*4+leftBorder-pullinfront, yAxislength-datas[3]*mult+upBorder, chartlength, datas[3]*mult);
 
 		//labels on x axis-----------------------
