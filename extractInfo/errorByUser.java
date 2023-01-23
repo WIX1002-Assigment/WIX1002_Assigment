@@ -42,13 +42,13 @@ public class errorByUser {
             }
 
             map = sortDescending(map);
-            System.out.println("--------------------------------------------");
-            System.out.println("User\t\t\t\t  Number of Errors");
-            System.out.println("--------------------------------------------");
-            map.forEach((keyword, count) -> System.out.printf("%-30s%-13d\n", keyword, count));
-            System.out.println("--------------------------------------------");
-            System.out.println("Total number of error caused by user: " + num);
-            System.out.println("--------------------------------------------");
+            System.out.println("+-------------------------+-------------------+");
+            System.out.printf("|%-24s | %-18s|\n", "  Users", "Number of Errors");
+            System.out.println("+-------------------------+-------------------+");
+            map.forEach((keyword, count) -> System.out.printf("|  %-22s | %-18d|\n", keyword, count));
+            System.out.println("+-------------------------+-------------------+");
+            System.out.println("|  Total number of error caused by user: " + num  +"  |");
+            System.out.println("+---------------------------------------------+");
         } catch (FileNotFoundException e) {
             System.out.println("File Not Found!");
         }
