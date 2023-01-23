@@ -167,7 +167,8 @@ public class AverageExecutionTime {
 
         // Print the difference in years, in days, in hours, in minutes, and in seconds
         System.out.print("The execution time of the jobs submitted to UMHPC : ");
-        System.out.println(difference_In_Days + " days, " + difference_In_Hours + " hours, " + difference_In_Minutes + " minutes, " + difference_In_Seconds + " seconds");
+        System.out.println(difference_In_Days + " days, " + difference_In_Hours + " hours, " + 
+                           difference_In_Minutes + " minutes, " + difference_In_Seconds + " seconds");
         System.out.println();
 
         int[] average = new int[4];
