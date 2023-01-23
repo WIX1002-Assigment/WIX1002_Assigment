@@ -56,7 +56,7 @@ public class usecGraphPanel extends JPanel{
 
 		//lable title of graph
 		g2D.setFont(new Font("Times Roman",Font.BOLD,37));
-		g2D.drawString("Total and Average Time Taken to Submit Job in Microseconds", 80, 40);
+		g2D.drawString("Average Time Taken to Submit Job in Microseconds", 100, 40);
 
 		//draw labels on y-axis---------------------
 		int labellength = 10;
